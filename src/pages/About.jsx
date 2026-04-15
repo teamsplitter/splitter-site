@@ -38,6 +38,12 @@ function About() {
       linkedinUrl: "https://www.linkedin.com/in/trisztan-horvath-a66216247/",
       imageSrc: "/images/team/member-5.jpg",
     },
+    {
+      name: "Rafael Isakov",
+      role: "Business Strategist",
+      linkedinUrl: "https://www.linkedin.com/in/rafael-isakov/",
+      imageSrc: "/images/team/member-6.jpg",
+    },
   ];
 
   return (
