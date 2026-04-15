@@ -1,0 +1,68 @@
+:root {
+  --bg-canvas: #f0f2f4;
+  --bg-widget: #ffffff;
+  --border-muted: #cacace;
+  --text-primary: #28292b;
+  --text-secondary: #56575a;
+  --brand-blue: #11316d;
+  --red-bg: #fffdfd;
+  --status-critical: #d32f2f;
+  --status-warning: #f57c00;
+  --font-family:
+    "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-canvas);
+  color: var(--text-primary);
+  font-family: var(--font-family);
+}
+
+.hmi-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Header */
+.hmi-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-widget);
+  border-bottom: 1px solid var(--border-muted);
+  border-bottom: 3px solid var(--brand-blue);
+  padding: 0.75rem 1.5rem;
+}
+
+.hmi-header h1 {
+  margin: 0;
+  font-size: 1rem; /* Smaller, tighter headers */
+  font-weight: 600;
+}
+
+/* Canvas */
+.dashboard-canvas {
+  flex: 1;
+  padding: 1rem;
+  background-image: radial-gradient(var(--border-muted) 1px, transparent 1px);
+  background-size: 20px 20px;
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  align-items: start;
+}
+
+.dashboard-col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
