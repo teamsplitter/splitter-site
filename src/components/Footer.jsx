@@ -7,13 +7,16 @@ function Footer() {
     <footer>
       <div className="container">
         <div className="footer-content">
-          <div>
+          <div className="footer-branding">
             <p>&copy; {currentYear} Team Splitter. All rights reserved.</p>
             <p className="footer-subtext">
               Intelligent Monitoring Solutions for Electrolysis Stacks.
             </p>
           </div>
-          <div>
+          <div className="footer-contact">
+            <a href="mailto:contact@splitter.cc">contact@splitter.cc</a>
+          </div>
+          <div className="footer-social">
             <a
               href="https://www.linkedin.com/company/106958885/"
               target="_blank"
